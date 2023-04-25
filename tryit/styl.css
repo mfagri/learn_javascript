@@ -1,0 +1,137 @@
+body{
+    align-items: center;
+    justify-self: center;
+    display: block;
+    background-color: rgb(114, 114, 111);
+    /* padding: auto; */
+}
+
+div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .div1 {
+    /* top: 20%; */
+    position: relative;
+    z-index: 999999;
+    background-color: rgba(245, 245, 220, 0);
+    height: 100px;
+    width: 100px;
+    margin: 50% 50%;
+  }
+  
+  /* .container {
+    position: relative;
+    height: 500px;
+  } */
+  
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6,
+  .div7 {
+    /* z-index: 9999; */
+    padding: 10px;
+    justify-content: center;
+    outline: none;
+    border-color: #b43288;
+    box-shadow: 0 0 10px #5e0665;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .div2 {
+    background-color: black;
+    animation-delay: 0s;
+  }
+  
+  .div3 {
+    background-color: black;
+    animation-delay: 1s;
+  }
+  
+  .div4 {
+    background-color: black;
+    animation-delay: 2s;
+  }
+  
+  .div5 {
+    background-color: black;
+    animation-delay: 3s;
+  }
+  .div6 {
+    background-color: black;
+    animation-delay: 4s;
+  }
+  .div7 {
+    background-color: black;
+    animation-delay: 5s;
+  }
+  
+  @keyframes circle {
+    from {
+      transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+  }
+  
+  .imags{
+    display: block;
+    position: absolute;
+    height: 400%;
+    z-index: 0;
+    /* top: 20%; */
+  }
+
+  .home{
+    height: 700px;
+    width: 700px;
+    margin: auto;
+
+   background-color: white;
+   border-radius: 50%;
+   animation-name: example;
+   animation-iteration-count: infinite;
+   animation-duration: 4s;
+  }
+
+  @keyframes example {
+    from {background-color: white;}
+    to {background-color: red;}
+  }
+  h1{
+    color: aliceblue;
+    font-size: 15px;
+  }
+
+  .para{
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #000000;
+    position: relative;
+    top: 10px;
+    bottom: 100px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  p{
+    color: aliceblue;
+  }
