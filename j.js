@@ -10,11 +10,13 @@
 
 const game = document.querySelector('#game');
 const info = document.querySelector('#info');
+const hp1 = document.querySelector('#hp1');
+const hp2 = document.querySelector('#hp2');
 
+console.log(hp2);
 const startCells = [
     "", "", "", "", "", "", "", "", "",
 ]
-// console.log(info);
 let go = "circle";
 info.textContent = "Circle goes first";
 function createBoard()
@@ -53,6 +55,7 @@ function checkwin()
         if(c)
         {
             info.textContent = "Circle win!"
+            hp1.textContent = "1";
             alld.forEach(square => square.replaceWith(square.cloneNode(true)))
             return
         }
@@ -60,6 +63,7 @@ function checkwin()
         if(dd)
         {
             info.textContent = "Cross win!"
+            hp2.textContent = "1";
             alld.forEach(square => square.replaceWith(square.cloneNode(true)))
             return
         }
